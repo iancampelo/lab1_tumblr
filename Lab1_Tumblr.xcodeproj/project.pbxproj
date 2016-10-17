@@ -8,16 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		0C6B138D1DB3370200545F68 /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6B138C1DB3370200545F68 /* PhotoDetailsViewController.swift */; };
+		0C70DE5F1DB3F8BD000FD41F /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70DE5E1DB3F8BD000FD41F /* PhotoCell.swift */; };
 		0C848B311DB2677C00FCAC4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C848B301DB2677C00FCAC4E /* AppDelegate.swift */; };
 		0C848B331DB2677C00FCAC4E /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C848B321DB2677C00FCAC4E /* PhotosViewController.swift */; };
 		0C848B361DB2677C00FCAC4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C848B341DB2677C00FCAC4E /* Main.storyboard */; };
 		0C848B381DB2677C00FCAC4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C848B371DB2677C00FCAC4E /* Assets.xcassets */; };
 		0C848B3B1DB2677C00FCAC4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C848B391DB2677C00FCAC4E /* LaunchScreen.storyboard */; };
-		9416599CEDBF230DF2BA4F6A /* libPods-Lab1_Tumblr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E1F0AB49E172C9B285483A /* libPods-Lab1_Tumblr.a */; };
+		7432FD861C2EDBE7269C48E1 /* Pods_Lab1_Tumblr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5901596544594489043AE51 /* Pods_Lab1_Tumblr.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C6B138C1DB3370200545F68 /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
+		0C70DE5E1DB3F8BD000FD41F /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		0C848B2D1DB2677C00FCAC4E /* Lab1_Tumblr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab1_Tumblr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C848B301DB2677C00FCAC4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C848B321DB2677C00FCAC4E /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +27,7 @@
 		0C848B371DB2677C00FCAC4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C848B3A1DB2677C00FCAC4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C848B3C1DB2677C00FCAC4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1E1F0AB49E172C9B285483A /* libPods-Lab1_Tumblr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lab1_Tumblr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5901596544594489043AE51 /* Pods_Lab1_Tumblr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lab1_Tumblr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34A9A54988C26ABEE58E5CD /* Pods-Lab1_Tumblr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lab1_Tumblr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lab1_Tumblr/Pods-Lab1_Tumblr.release.xcconfig"; sourceTree = "<group>"; };
 		EE0B06F0521D1DCC2D805A96 /* Pods-Lab1_Tumblr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lab1_Tumblr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lab1_Tumblr/Pods-Lab1_Tumblr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,13 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9416599CEDBF230DF2BA4F6A /* libPods-Lab1_Tumblr.a in Frameworks */,
+				7432FD861C2EDBE7269C48E1 /* Pods_Lab1_Tumblr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C70DE5D1DB3F87B000FD41F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C70DE5E1DB3F8BD000FD41F /* PhotoCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0C70DE601DB3F8DF000FD41F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0C848B321DB2677C00FCAC4E /* PhotosViewController.swift */,
+				0C6B138C1DB3370200545F68 /* PhotoDetailsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		0C848B241DB2677B00FCAC4E = {
 			isa = PBXGroup;
 			children = (
@@ -63,13 +82,13 @@
 		0C848B2F1DB2677C00FCAC4E /* Lab1_Tumblr */ = {
 			isa = PBXGroup;
 			children = (
+				0C70DE601DB3F8DF000FD41F /* ViewControllers */,
+				0C70DE5D1DB3F87B000FD41F /* Views */,
 				0C848B301DB2677C00FCAC4E /* AppDelegate.swift */,
-				0C848B321DB2677C00FCAC4E /* PhotosViewController.swift */,
 				0C848B341DB2677C00FCAC4E /* Main.storyboard */,
 				0C848B371DB2677C00FCAC4E /* Assets.xcassets */,
 				0C848B391DB2677C00FCAC4E /* LaunchScreen.storyboard */,
 				0C848B3C1DB2677C00FCAC4E /* Info.plist */,
-				0C6B138C1DB3370200545F68 /* PhotoDetailsViewController.swift */,
 			);
 			path = Lab1_Tumblr;
 			sourceTree = "<group>";
@@ -77,7 +96,7 @@
 		1661051FCE93452386E47FCB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C1E1F0AB49E172C9B285483A /* libPods-Lab1_Tumblr.a */,
+				B5901596544594489043AE51 /* Pods_Lab1_Tumblr.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C70DE5F1DB3F8BD000FD41F /* PhotoCell.swift in Sources */,
 				0C848B331DB2677C00FCAC4E /* PhotosViewController.swift in Sources */,
 				0C848B311DB2677C00FCAC4E /* AppDelegate.swift in Sources */,
 				0C6B138D1DB3370200545F68 /* PhotoDetailsViewController.swift in Sources */,

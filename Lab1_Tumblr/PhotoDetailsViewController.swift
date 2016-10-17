@@ -10,10 +10,22 @@ import UIKit
 
 class PhotoDetailsViewController: UIViewController {
 
+    @IBOutlet weak var photoView: UIImageView!
+    var post: NSDictionary?
+    var imageUrl: NSURL?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        //avatar.setImageWithURL(NSURL(string:"https://api.tumblr.com/v2/blog/humansofnewyork.tumblr.com/avatar")!)
+        //publishDate.text = convertDateFormater(post["date"] as! String)
+        let image = post?["photos"] as! [NSDictionary]
+        let photoDetail = image[0]
+        let original = photoDetail["original_size"] as! NSDictionary
+        let url = original["url"] as! String
+        imageUrl = NSURL(string: url)
+        photoView.setImageWith(imageUrl! as URL)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +33,4 @@ class PhotoDetailsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
