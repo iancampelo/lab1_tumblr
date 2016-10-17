@@ -96,13 +96,11 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destination as? PhotoDetailsViewController {
-            let post = photos![(self.tableView.indexPathForSelectedRow?.section)!]
-            destination.post = post
-            print("Post \(post)")
-            print("IndexPath \(self.tableView.indexPathForSelectedRow?.section)")
-        }
+        let indexPath = tableView.indexPathForSelectedRow
+        let post = photos?[(indexPath?.row)!]
+        let detailVC = segue.destination as! PhotoDetailsViewController
+        detailVC.post = post
     }
-
+    
 }
 
